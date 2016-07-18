@@ -19,7 +19,7 @@ public class HelloController extends AbstractController{
     @Override
     protected ModelAndView handleRequestInternal(HttpServletRequest hsr, HttpServletResponse hsr1) throws Exception {
         ModelAndView modelandview = new ModelAndView("index");
-        ModelAndView addObject = modelandview.addObject("welcomeMessage","Hi User, welcome to the first Spring MVC Application");
+        modelandview.addObject("welcomeMessage","Hi User, welcome to the first Spring MVC Application");
         return modelandview;
     }
       
